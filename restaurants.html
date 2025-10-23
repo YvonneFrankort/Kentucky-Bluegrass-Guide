@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurants - Bluegrass Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Kentucky Bluegrass Guide</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="images.html">Images</a></li>
+        <li><a href="restaurants.html" class="active">Restaurants</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="about.html" >About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="restaurant-intro">
+      <h2>Restaurants in Kentucky</h2>
+      <p>Discover popular restaurants in Frankfort, Louisville and Lexington.</p>
+    </section>
+
+    <section class="city-filters">
+      <button class="filter-btn" data-city="all">All Cities</button>
+      <button class="filter-btn" data-city="frankfort">Frankfort</button>
+      <button class="filter-btn" data-city="louisville">Louisville</button>
+      <button class="filter-btn" data-city="lexington">Lexington</button>
+    </section>
+
+    <section id="restaurantCards" class="restaurant-cards">
+      <!-- Restaurants dynamically inserted here by restaurants.js -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bluegrass Guide | Powered by Wikipedia Commons, Unsplash</p>
+  </footer>
+
+  <script src="restaurants.js"></script>
+</body>
+</html>

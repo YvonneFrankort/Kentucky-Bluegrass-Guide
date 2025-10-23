@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather - Bluegrass Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Kentucky Bluegrass Guide</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weather.html" class="active">Weather</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="images.html">Images</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="weather-intro">
+      <h2>Weather in Kentucky Cities</h2>
+      <p>Check the current weather in Frankfort, Louisville and Lexington.</p>
+    </section>
+
+    <section class="weather-controls">
+      <label for="unitSelect">Units:</label>
+      <select id="unitSelect">
+        <option value="metric">Celsius</option>
+        <option value="imperial">Fahrenheit</option>
+      </select>
+    </section>
+
+    <!-- weather container -->
+    <section class="weather-cards">
+      <div class="weather-card" id="frankfort">
+        <h3>Frankfort</h3>
+        <p class="temp">Temperature: --°C</p>
+        <p class="desc">Weather: --</p>
+        <p class="suggestion"></p>
+      </div>
+
+      <div class="weather-card" id="louisville">
+        <h3>Louisville</h3>
+        <p class="temp">Temperature: --°C</p>
+        <p class="desc">Weather: --</p>
+        <p class="suggestion"></p>
+      </div>
+
+      <div class="weather-card" id="lexington">
+        <h3>Lexington</h3>
+        <p class="temp">Temperature: --°C</p>
+        <p class="desc">Weather: --</p>
+        <p class="suggestion"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Bluegrass Guide | Powered by OpenWeatherMap API</p>
+  </footer>
+  <script src="config.js"></script>
+  <script src="weather.js"></script>
+</body>
+</html>

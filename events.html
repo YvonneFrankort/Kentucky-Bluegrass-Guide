@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events - Bluegrass Guide</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Kentucky Bluegrass Guide</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="events.html"class="active">Events</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="about.html" >About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="event-intro">
+            <h2>Events around you</h2>
+            <p>Find the best events in Frankfort, Louisville and Lexington.</p>
+        </section>
+
+        <!-- City filters -->
+        <section class="city-filters">
+            <button class="filter-btn" data-city="all">All Cities</button>
+            <button class="filter-btn" data-city="frankfort">Frankfort</button>
+            <button class="filter-btn" data-city="louisville">Louisville</button>
+            <button class="filter-btn" data-city="lexington">Lexington</button>
+        </section>
+
+        <!-- Type filters -->
+        <section class="type-filters">
+            <button class="filter-type-btn" data-type="all">All Types</button>
+            <button class="filter-type-btn" data-type="music">Music</button>
+            <button class="filter-type-btn" data-type="sports">Sports</button>
+            <button class="filter-type-btn" data-type="family">Family</button>
+            <button class="filter-type-btn" data-type="culture">Culture</button>
+            <button class="filter-type-btn" data-type="festival">Festival</button>
+        </section>
+
+        <!-- Event cards container -->
+        <section class="event-cards" id="eventCards">
+            <!-- Here: Ticketmaster events dynamically inserted -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Bluegrass Guide | Powered by Ticketmaster API</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="events.js"></script>
+</body>
+</html>

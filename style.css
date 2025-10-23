@@ -1,0 +1,900 @@
+ /* ---------- GLOBAL STYLES ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+/* ---------- MAIN LAYOUT ---------- */
+main {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  color: #004080;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  margin-bottom: 3rem;
+}
+
+/* ---------- BUTTONS ---------- */
+button, .filter-btn {
+  background-color: #0074cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover, .filter-btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-1px);
+}
+
+button:active, .filter-btn:active {
+  transform: translateY(1px);
+}
+
+/* ---------- FILTER BUTTONS ---------- */
+.city-filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  margin: 0.25rem;
+}
+
+/* ---------- RESTAURANT GRID ---------- */
+/* Restaurant grid */
+.restaurant-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 2.5rem;
+  justify-items: center;
+}
+
+/* Restaurant card */
+.restaurant-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  max-width: 260px;
+}
+
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image container */
+.restaurant-card img {
+  width: 100%;
+  height: 180px;   
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Card text */
+.restaurant-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.25rem;
+  text-align: center;
+}
+
+.restaurant-card p {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+  text-align: center;
+}
+
+.restaurant-card button {
+  margin: 0.5rem 0 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background-color: #2a5d9f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+}
+.restaurant-card button:hover {
+  background-color: #1d4372;
+}
+
+
+
+/* ---------- IMAGE GALLERY ---------- */
+.image-gallery {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 2.5rem;
+}
+
+.image-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+  height: 280px;
+  position: relative;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+}
+
+.img-container {
+  flex: 1;
+  width: 100%;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 8px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.55));
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-card .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.image-card .save-btn {
+  margin: 8px 0;
+  padding: 0.5rem 1rem;
+  background-color: #2a5d9f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.image-card .save-btn:hover {
+  background-color: #1d4372;
+}
+
+/* ---------- SAVED IMAGES / PLANNER ---------- */
+#savedImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, max-content));
+  gap: 16px;
+  margin-top: 1.5rem;
+  justify-items: start;
+  justify-content: start;
+  grid-auto-flow: row dense;
+  margin-bottom: 1rem;
+}
+
+.saved-image-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  transition: transform 0.2s ease;
+}
+
+.saved-image-card:hover {
+  transform: translateY(-5px);
+}
+
+.saved-image-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.saved-image-card h4 {
+  padding: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.saved-image-card button {
+  margin: 8px 0 12px 0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background-color: #2a5d9f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.saved-image-card button:hover {
+  background-color: #1d4372;
+}
+
+
+/* ---------- SAVED RESTAURANTS / PLANNER ---------- */
+#savedRestaurants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, max-content));
+  gap: 16px;
+  margin-top: 1rem;
+  justify-items: start; /*center*/
+  justify-content: start;
+  grid-auto-flow: row dense;
+  margin-bottom: 1.5rem;
+}
+
+.saved-restaurant-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  transition: transform 0.2s ease;
+  justify-content: space-between;
+}
+
+.saved-restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+.saved-restaurant-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.saved-restaurant-card h4 {
+  margin: 8px 0 4px 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.saved-restaurant-card p {
+  font-size: 0.85rem;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.saved-restaurant-card button, .restaurant-card button {
+  margin-top: auto; /* push button to the bottom */
+  align-self: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background-color: #2a5d9f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+/* ---------- TOAST MESSAGE ---------- */
+.toast {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #333;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+/* ---------- WEATHER PAGE ---------- */
+.weather-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.weather-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-4px);
+}
+
+.weather-card img.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.weather-card h3 {
+  color: #004080;
+  margin-bottom: 0.5rem;
+}
+
+.weather-card p {
+  margin: 0.25rem 0;
+}
+
+/* ---------- SAVED EVENTS / PLANNER ---------- */
+#savedEvents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, max-content));
+  gap: 16px;
+  margin-top: 1rem;      
+  justify-items: start;
+  justify-content: start;
+  grid-auto-flow: row dense;
+  margin-bottom: 1.5rem;
+}
+
+.saved-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  transition: transform 0.2s ease;
+}
+
+.saved-card:hover {
+  transform: translateY(-5px);
+}
+
+.saved-card h4 {
+  margin: 4px 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.saved-card p {
+  font-size: 0.85rem;
+  margin: 4px 0;
+  text-align: center;
+}
+
+.saved-card button {
+  margin: 8px 0 12px 0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background-color: #2a5d9f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.saved-card button:hover {
+  background-color: #1d4372;
+}
+
+/* Space between intro paragraph and first planner section (Saved Events) */
+.planner .planner-section:first-of-type {
+  margin-top: 3.5rem;
+}
+
+/* Space between other planner sections (Saved Events → Restaurants → Images) */
+.planner .planner-section + .planner-section {
+  margin-top: 1rem;
+}
+
+/* ---------- HERO SECTION WITH BACKGROUND ---------- */
+.hero {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  background: url('images/extra/Natural_Bridge.jpg') no-repeat center center/cover;
+  
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.25);
+  z-index: 0;
+}
+
+.hero h2,
+.hero p {
+  position: relative; /* on top of overlay */
+  z-index: 1;
+}
+
+/* ---------- MAP SECTION ---------- */
+.map-section h2 {
+  color: #004080;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.map-section p {
+  color: #333;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.map-container {
+  max-width: 950px;
+  margin: 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  display: block;
+}
+
+
+
+/* ---------- HEADER & NAV ---------- */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent; /* invisible line for consistent height */
+}
+
+nav a:hover {
+  color: #ffdd57;
+  border-bottom: 2px solid #ffdd57; /* gold underline on hover */
+}
+
+nav a.active {
+  border-bottom: 2px solid #ffffff; /* white underline for active page */
+  font-weight: 600;
+}
+
+/* ---------- HOME PAGE LAYOUT ---------- */
+.home-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left: Navigation Cards 3x3*/
+.home-left {
+  flex: 1 1 60%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f4f8 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h3 {
+  margin-bottom: 0.8rem;
+  color: #004080;
+  font-size: 1.2rem;
+}
+
+.card p {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  background: rgba(0, 64, 128, 0.1);
+  color: #004080;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-block;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.card a:hover {
+  background: rgba(0, 64, 128, 0.2);
+  color: #00264d;
+}
+
+/* Right: Quick Facts 2x2 */
+.home-right {
+  flex: 1 1 35%;
+}
+
+.card h3 i {
+  color: #004080;
+  margin-right: 0.5rem;
+  font-size: 1.1em;
+}
+
+
+.facts {
+  background: #f5f8fb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.facts h2 {
+  color: #004080;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.fact {
+  background: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fact img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+
+/* --------- EVENTS PAGE STYLING ----------*/
+.event-intro {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.city-filters,
+.type-filters {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.filter-btn,
+.filter-type-btn {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-type-btn:hover {
+  background-color: #0066cc;
+}
+
+/* Event grid layout */
+.event-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+/* Individual event cards */
+.event-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Event details inside the card */
+.event-card h3 {
+  color: #004080;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.event-card p {
+  margin: 0.4rem 0;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Buttons */
+.event-card button {
+  background: #004080;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+  transition: background-color 0.2s ease;
+}
+
+.event-card button:hover {
+  background: #0066cc;
+}
+
+/* ---------- ABOUT PAGE STYLING ---------- */
+
+/* ---------- Hero Section ---------- */
+.about-hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background-color: #eef3f9;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.about-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ---------- Shared Flex Containers ---------- */
+.about-images,
+.landscape-images,
+.about-card-container,
+.national-parks .icons,
+.cultural-heritage .icons,
+.cities-attractions .icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* ---------- Shared Card Style ---------- */
+.about-img,
+.about-card,
+.landscape-img {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Individual Sizing */
+.about-img { width: 340px; padding: 1rem; }
+.about-card { max-width: 300px; flex: 0 1 calc(33.333% - 1rem); padding: 0.5rem; }
+.landscape-img { width: 300px; height: auto; }
+
+/* ---------- Shared Image Styling ---------- */
+.about-img img,
+.about-card img,
+.landscape-img img,
+.national-parks .icons img,
+.cultural-heritage .icons img,
+.cities-attractions .icons img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* ---------- Shared Text Styling ---------- */
+.about-img p,
+.about-card p,
+.landscape-img p,
+.national-parks .icons p,
+.cultural-heritage .icons p,
+.cities-attractions .icons p {
+  text-align: center;
+  font-weight: 500;
+  color: #004080;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* ---------- Park Map Card ---------- */
+.park-map-card {
+  max-width: 800px;
+  margin: 1.5rem auto 3rem auto;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.park-map-card img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.park-map-card p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #004080;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive Layout ---------- */
+@media (max-width: 900px) {
+  .about-card {
+    flex: 0 1 calc(50% - 1rem); /* 2 per row */
+  }
+
+  .about-images,
+  .landscape-images,
+  .about-card-container,
+  .national-parks .icons,
+  .cultural-heritage .icons,
+  .cities-attractions .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-card {
+    flex: 0 1 100%; /* 1 per row */
+  }
+
+  .about-img,
+  .landscape-img,
+  .national-parks .icons img,
+  .cultural-heritage .icons img,
+  .cities-attractions .icons img {
+    width: 90%;
+    height: auto;
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planner - Bluegrass Guide</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Kentucky Bluegrass Guide</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="planner.html"class="active">Planner</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container planner">
+            <h2>My Kentucky Planner</h2>
+            <p>Save your favorite events, restaurants and images here.</p>
+
+           
+            <div class="planner-section">
+                <h3>Saved Events</h3>
+                <ul id="savedEvents">
+                </ul>
+            </div>
+
+            <div class="planner-section">
+                <h3>Saved Restaurants</h3>
+                <div id="savedRestaurants" class="gallery-grid"></div>
+            </div>
+
+            
+            <div class="planner-section">
+                <h3>Saved Images</h3>
+                <div id="savedImages" class="gallery-grid">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Bluegrass Guide</p>
+    </footer>
+
+    <script src="planner.js"></script>
+</body>
+</html>
