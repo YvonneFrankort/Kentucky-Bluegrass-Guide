@@ -2,12 +2,13 @@
 
 The **Kentucky Bluegrass Guide** is a responsive single‑page web application introducing users to the culture, nature, and cities of Kentucky — especially the Bluegrass Region. It highlights **Frankfort**, **Lexington**, and **Louisville**, combining real‑time data, curated information, and local attractions into a smooth SPA‑style experience.
 
-The guide includes current weather, upcoming events, restaurant recommendations, scenic images, and an about section with cultural and natural highlights. Users can save favorite events, images, and restaurants to a personal planner stored locally in the browser.  
+The app includes current weather, upcoming events, restaurant recommendations, scenic images, and an about section with cultural and natural highlights. Users can save favorite events, images, and restaurants to a personal planner stored locally in the browser. 
+
 This project was created as part of a web development portfolio.
 
 ---
 
-## Demo Video
+## 🎥 Demo Video
 
 
 https://github.com/user-attachments/assets/7877f559-5d97-406a-bbad-3d3df90dbf47
@@ -16,7 +17,7 @@ https://github.com/user-attachments/assets/7877f559-5d97-406a-bbad-3d3df90dbf47
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 Below is an overview of the main sections of the Kentucky Bluegrass Guide.  
 Replace the placeholder filenames with your actual screenshot names.
@@ -24,7 +25,6 @@ Replace the placeholder filenames with your actual screenshot names.
 ### Home Page
 <img width="1321" height="757" alt="homepage" src="https://github.com/user-attachments/assets/c8aab354-dd0a-4a73-bbba-f38727ca5be8" />
 <img width="763" height="671" alt="homepage2" src="https://github.com/user-attachments/assets/70093fa9-d373-4f30-96e9-296d0fe7d951" />
-
 
 ### Weather
 <img width="1320" height="735" alt="weather" src="https://github.com/user-attachments/assets/d03c7552-bd30-4e14-9af7-dddd8f0f0e6e" />
@@ -50,56 +50,48 @@ Replace the placeholder filenames with your actual screenshot names.
 
 ---
 
-## Features
+## ✨ Features
 
-### Weather
-- Displays current weather for **Frankfort**, **Lexington**, and **Louisville**
-- Shows temperature, conditions, activity suggestions, and weather icons
-- Uses **OpenWeatherMap API**
-- Supports **Fahrenheit ↔ Celsius** switching
+### 🌤 Weather
+- Current weather for **Frankfort**, **Lexington**, and **Louisville**
+- Temperature, conditions, activity suggestions, and weather icons
+- Powered **OpenWeatherMap API**
+- **Fahrenheit ↔ Celsius** toggle
 
-### Events
-- Browse upcoming events for the next 30 days
+### 🎟 Events
+- Upcoming events for the next 30 days
 - Powered by **Ticketmaster API**
 - Filter by city and event type
 - Save events to the personal planner
 
-### Restaurants
-- Discover local restaurants by city
-- Each card includes category, description, and address
-- Restaurants can be saved to the planner
+### 🍽 Restaurants
+- Local restaurant recommendations by city
+- Cards includes category, description, and address
+- Save restaurants to the planner
 
-### Images
-- View scenic photos of Kentucky landscapes
+### 🖼️Images
+- Scenic photos of Kentucky landscapes
 - Save favorite images to the planner
-- Image titles appear on hover
+- Hover reveals image titles
 
-### Planner
-- Collect saved events, restaurants, and images in one place
+### 📒 Planner
+- Collect saved events, restaurants, and images
 - Stored using **Local Storage**
-- Items can be added or removed
-- Data persists after refresh or reopening the page
+- Add/remove items
+- Data persists across sessions
 
-### About
+### ℹ️ About
 - Facts about Kentucky and the Bluegrass Region
 - Includes maps, cards, and images
 
-### SPA‑Style Navigation
+### 🧭 SPA‑Style Navigation
 - Seamless transitions between views
 - No full page reloads
 - Smooth, app‑like user experience
 
-### Responsive Design
+### 📱 Responsive Design
 - Built with CSS Grid and flexible layouts
 - Works on desktop, tablet, and mobile
-
-### Local Storage
-- Saves user selections persistently
-- Planner remains intact across sessions
-
-### UI Details
-- Buttons change to **“Saved!”** after saving
-- Hover effects reveal image titles
 
 ---
 
@@ -125,7 +117,7 @@ Replace the placeholder filenames with your actual screenshot names.
 
 ---
 
-## Technologies Used
+## 🛠 Technologies Used
 
 ### Languages
 - JavaScript  
@@ -143,7 +135,7 @@ Replace the placeholder filenames with your actual screenshot names.
 
 ## What I Learned
 
-Working on the Kentucky Bluegrass Guide helped me strengthen both my technical and design skills. Key takeaways include:
+Working on the Kentucky Bluegrass Guide helped me strengthen both my technical and design skills. 
 
 - **Building a SPA without frameworks**: Managing multiple views using JavaScript by showing and hiding sections dynamically.
 - **Integrating external APIs**: Fetching and displaying real‑time data from OpenWeatherMap and Ticketmaster.
@@ -155,7 +147,7 @@ Working on the Kentucky Bluegrass Guide helped me strengthen both my technical a
 
 ---
 
-## Sources
+## 🔗 Sources
 
 All external resources used in this project are free and publicly available:
 
