@@ -1,10 +1,36 @@
 # Kentucky Bluegrass Guide
 
-The **Kentucky Bluegrass Guide** is a responsive single‑page web application introducing users to the culture, nature, and cities of Kentucky — especially the Bluegrass Region. It highlights **Frankfort**, **Lexington**, and **Louisville**, combining real‑time data, curated information, and local attractions into a smooth SPA‑style experience.
+The **Kentucky Bluegrass Guide** is a responsive single‑page travel web application that helps users explore culture, nature, and cities of Kentucky — especially the Bluegrass Region through real-time data, curated local content, and a personal planning system.
 
-The app includes current weather, upcoming events, restaurant recommendations, scenic images, and an about section with cultural and natural highlights. Users can save favorite events, images, and restaurants to a personal planner stored locally in the browser. 
+The app combines current weather, upcoming events, restaurant recommendations, and scenic highlights into a unified experience, allowing users to discover places and save favorites for later using a persistent browser-based planner.
 
-This project was created as part of a web development portfolio.
+---
+
+## ⭐ Highlights
+- Persistent personal planner using localStorage
+- Multi-API integration (weather + events)
+- Fully responsive SPA architecture
+
+---
+
+## ✨ Features
+
+### 🌍 Core Experience
+- Single-page application (SPA) with smooth navigation between views
+- Responsive design for desktop, tablet, and mobile
+
+### 🌤 Real-Time Data Integration
+- OpenWeatherMap API for live weather data
+- Ticketmaster API for upcoming events with filtering
+
+### 📒 Personal Planner System
+- Save events, restaurants, and images
+- Persistent storage using localStorage
+- Add and remove saved items across sessions
+
+### 📱 Responsive Design
+- Built with CSS Grid and flexible layouts
+- Works on desktop, tablet, and mobile
 
 ---
 
@@ -50,51 +76,6 @@ Replace the placeholder filenames with your actual screenshot names.
 
 ---
 
-## ✨ Features
-
-### 🌤 Weather
-- Current weather for **Frankfort**, **Lexington**, and **Louisville**
-- Temperature, conditions, activity suggestions, and weather icons
-- Powered **OpenWeatherMap API**
-- **Fahrenheit ↔ Celsius** toggle
-
-### 🎟 Events
-- Upcoming events for the next 30 days
-- Powered by **Ticketmaster API**
-- Filter by city and event type
-- Save events to the personal planner
-
-### 🍽 Restaurants
-- Local restaurant recommendations by city
-- Cards includes category, description, and address
-- Save restaurants to the planner
-
-### 🖼️Images
-- Scenic photos of Kentucky landscapes
-- Save favorite images to the planner
-- Hover reveals image titles
-
-### 📒 Planner
-- Collect saved events, restaurants, and images
-- Stored using **Local Storage**
-- Add/remove items
-- Data persists across sessions
-
-### ℹ️ About
-- Facts about Kentucky and the Bluegrass Region
-- Includes maps, cards, and images
-
-### 🧭 SPA‑Style Navigation
-- Seamless transitions between views
-- No full page reloads
-- Smooth, app‑like user experience
-
-### 📱 Responsive Design
-- Built with CSS Grid and flexible layouts
-- Works on desktop, tablet, and mobile
-
----
-
 ## Project Structure
 
 ```
@@ -133,32 +114,26 @@ Replace the placeholder filenames with your actual screenshot names.
 
 ---
 
-## What I Learned
+## 📚 What I Learned
 
-Working on the Kentucky Bluegrass Guide helped me strengthen both my technical and design skills. 
+This project helped me improve both frontend development skills and application design thinking. 
 
-- **Building a SPA without frameworks**: Managing multiple views using JavaScript by showing and hiding sections dynamically.
-- **Integrating external APIs**: Fetching and displaying real‑time data from OpenWeatherMap and Ticketmaster.
-- **Using Local Storage for persistent data**: Implementing a planner that saves events, restaurants, and images across sessions.
+- **Building a SPA without frameworks** by managing multiple views with JavaScript
+- Working with **external APIs** and handling **real-time data**
+- Designing persistent user features using **localStorage**
+- Implementing a **planner system** to store and manage user selections across sessions
 - **Designing responsive layouts**: Using CSS Grid and flexible layouts to support different screen sizes.
-- **Organizing a multi‑file JavaScript project**: Splitting features into separate JS modules for clarity and maintainability.
-- **Improving UI/UX details**: Adding “Saved!” button states and hover titles for a more polished feel.
-- **Practicing version control**: Committing regularly, structuring a clean repository, and documenting the project clearly.
-
+- **Structuring multi‑file JavaScript project** with separation of concerns
+- **Improving UI/UX details** such as saved states, hover interactions, and responsive layouts
+- Understanding how to balance curated static content with dynamic API data
+  
 ---
 
-## 🔗 Sources
+## 🥅 Project Goal
 
-All external resources used in this project are free and publicly available:
+The goal of this project was to build a structured frontend application that simulates a real-world travel guide experience using external APIs, reusable UI components, and persistent user state.
 
-- **OpenWeatherMap API** — real‑time weather data  
-- **Ticketmaster Discovery API** — event listings  
-- **MDN Web Docs** — JavaScript, CSS, and DOM references  
-- **W3Schools** — layout and syntax examples  
 
-No paid or restricted sources were used.
-
----
 
 
 
