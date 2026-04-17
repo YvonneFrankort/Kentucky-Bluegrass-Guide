@@ -24,9 +24,9 @@ The app combines current weather, upcoming events, restaurant recommendations, a
 - Ticketmaster API for upcoming events with filtering
 
 ### 📒 Personal Planner System
-- Save events, restaurants, and images
-- Persistent storage using localStorage
-- Add and remove saved items across sessions
+- Built a persistent cross-page bookmarking system enabling users to save and manage events, restaurants, and images across multiple views.
+- Implemented categorized organization within a localStorage-based planner, allowing users to group and manage saved items in a unified experience.
+- Supports create and delete operations for saved items, with persistent storage across sessions.
 
 ### 📱 Responsive Design
 - Built with CSS Grid and flexible layouts
