@@ -36,8 +36,7 @@ The app combines current weather, upcoming events, restaurant recommendations, a
 
 ## 🎥 Demo Video
 
-
-https://github.com/user-attachments/assets/7877f559-5d97-406a-bbad-3d3df90dbf47
+https://github.com/user-attachments/assets/3b226f56-ceb0-4f32-ba76-9a7bc635aa3c
 
 ---
 
