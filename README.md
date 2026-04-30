@@ -34,6 +34,13 @@ The app combines current weather, upcoming events, restaurant recommendations, a
 
 ---
 
+## 🎥 Demo Video
+
+
+https://github.com/user-attachments/assets/7877f559-5d97-406a-bbad-3d3df90dbf47
+
+---
+
 ## 📸 Screenshots
 
 Below is an overview of the main sections of the Kentucky Bluegrass Guide.  
@@ -63,13 +70,6 @@ Replace the placeholder filenames with your actual screenshot names.
 | About | About |
 |-----------|---------|
 | <img width="350" alt="about2" src="https://github.com/user-attachments/assets/63f908b2-513f-44b5-893c-269d61822ab8" /> | <img width="350" alt="about3" src="https://github.com/user-attachments/assets/f66c55a1-f8a4-4c62-99d5-567b0b4a318b" />|
-
----
-
-## 🎥 Demo Video
-
-
-https://github.com/user-attachments/assets/7877f559-5d97-406a-bbad-3d3df90dbf47
 
 ---
 
