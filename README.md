@@ -2,7 +2,7 @@
 
 The **Kentucky Bluegrass Guide** is a responsive single‑page travel web application that helps users explore culture, nature, and cities of Kentucky — especially the Bluegrass Region through real-time data, curated local content, and a personal planning system.
 
-The app combines current weather, upcoming events, restaurant recommendations, and scenic highlights into a unified experience, allowing users to discover places and save favorites for later using a persistent browser-based planner.
+Users can check current weather, browse upcoming events, discover restaurants, view scenic highlights, and save favorites using a persistent browser‑based planner.
 
 ---
 
